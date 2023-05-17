@@ -1,0 +1,536 @@
+main .title {
+	color: #01823F;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Popins-Bold';
+	font-size: 36px;
+}
+
+main .title::after {
+	content: '';
+	width: 220px;
+	height: 6px;
+	background-image: linear-gradient(90deg, #77C610 20%, #01823F);
+	margin-top: 30px;
+}
+
+.main1 .Hbanner-box {
+	background: url('../images/bg-exhibition.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.main1 .Hbanner {
+	max-width: 1550px;
+	margin: auto;
+	padding: 50px 0 50px;
+}
+
+.main1 .Hbanner h1 {
+	color: #95CEDC;
+	font-family: 'Popins-Bold';
+	font-size: 48px;
+	margin-bottom: 30px;
+}
+
+.main1 .Hbanner h1 span {
+	color: #FFFFFF;
+}
+
+.main1 .Hbanner p {
+	margin-bottom: 50px;
+	color: #fff;
+	font-family: 'Popins-Medium';
+}
+
+.main1 .Hbanner .btn2 {
+	display: none;
+}
+
+.main1 .Hbanner a {
+	border-radius: 8px;
+	padding: 10px 30px;
+	font-size: 20px;
+	font-family: 'Popins-Medium';
+	cursor: pointer;
+	border: 1px solid #01823F;
+	color: #01823F;
+	background-color: #fff;
+	min-width: 9em;
+	text-align: center;
+	font-weight: 600;
+	text-shadow: 10px 5px 10px #D6D6D6;
+}
+
+.main1 .Hbanner a:hover {
+	background-color: #01823F;
+	color: #fff;
+	text-shadow: none;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 10px;
+	top: 60%;
+	z-index: 999;
+}
+
+.box a {
+	margin: 4px 0;
+}
+
+.box img {
+	width: 28px;
+	height: 28px;
+}
+
+.main2 {
+	background-color: #F1F1F1;
+	padding: 68px 0;
+
+}
+
+@media screen and (min-width: 1080px) {
+	.main2 {
+
+		margin: 80px 0;
+	}
+}
+
+.main-box {
+	max-width: 1580px;
+	margin: auto;
+}
+
+.main-box2 {
+	max-width: 1280px;
+	margin: auto;
+}
+
+.main2 .introduce,
+.main8 .introduce {
+	color: #757474;
+	text-align: center;
+	margin-top: 35px;
+	font-size: 20px;
+	font-family: 'Popins-ExtraLight';
+	margin-bottom: 45px;
+}
+
+.main2 .box1 {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 55px 0;
+	border: 1px solid #B4B4B5;
+	box-shadow: 10px 10px 10px #B4B4B5;
+	margin: 25px 0;
+}
+
+.main2 .box1 h1 {
+	color: #01823F;
+	font-family: 'Popins-Bold';
+	font-size: 30px;
+}
+
+.main2 .box1 img {
+	width: 575px;
+	cursor: pointer;
+}
+
+.main2 .box1 .fleximg {
+	display: flex;
+}
+
+.main2 .box2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main2 .box2 .box1 {
+	width: 49%;
+	margin: 0;
+}
+
+.main2 .box2 .box1 img {
+	width: 500px;
+}
+
+.main2 .box1 .fleximg img {
+	width: 530px;
+}
+
+.main2 .intitle {
+	color: #01823F;
+	font-family: 'Popins-Bold';
+	font-size: 36px;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.main2 .flex-btn {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.main2 .flex-btn .btn1,
+.main2 .flex-btn .btn2 {
+	position: relative;
+}
+
+.main2 .flex-btn .btn2 {
+	margin-left: 50px;
+}
+
+.main2 .flex-btn .btn1 a {
+	color: #fff;
+	background-color: #01823F;
+	border-radius: 10px;
+	padding: 15px 50px;
+	box-shadow: 5px 5px 10px #CCCCCC;
+	font-family: 'Popins-Medium';
+	position: relative;
+	z-index: 10;
+}
+
+.main2 .flex-btn .btn1 a:hover,
+.main2 .flex-btn .btn2 a:hover {
+	background: #fff;
+	color: #01823F;
+}
+
+.main2 .flex-btn .btn1:hover div,
+.main2 .flex-btn .btn2:hover div {
+	content: '';
+	width: 100%;
+	height: 30px;
+	background: #01823F;
+	position: absolute;
+	left: 0;
+	top: -20px;
+	border-radius: 10px 10px 0 0;
+	z-index: 0;
+}
+
+.main2 .flex-btn .btn2 a {
+	border-radius: 10px;
+	padding: 15px 50px;
+	color: #fff;
+	background-color: #231815;
+	box-shadow: 5px 5px 10px #CCCCCC;
+	font-family: 'Popins-Medium';
+	position: relative;
+	z-index: 10;
+}
+
+.dialog {
+	position: fixed;
+	left: 20%;
+	top: 30%;
+	width: 60%;
+	background: #fff;
+	border: 1px solid #ACACAC;
+	box-shadow: 10px 10px 10px #919191;
+	border-radius: 10px;
+	padding: 30px;
+	display: none;
+	z-index: 100;
+}
+
+.dialog .head {
+	display: flex;
+	justify-content: space-between;
+}
+
+.dialog .head .left {
+	font-family: 'Popins-Bold';
+	color: #01823F;
+	font-size: 20px;
+}
+
+.dialog .off {
+	cursor: pointer;
+}
+
+.dialog .content {
+	display: flex;
+	align-items: flex-start;
+	height: 400px;
+	overflow-y: auto;
+}
+
+.dialog .content>img {
+	width: 300px;
+	height: auto;
+}
+
+.dialog .content .cont p {
+	margin: 10px 0;
+	font-family: 'Popins-Light';
+	font-size: 16px;
+}
+
+.dialog .content .cont a {
+	color: #E95491;
+}
+
+@media screen and (max-width:1080px) {
+	.main2 .box2 .box1 img {
+		width: 100%;
+	}
+
+	.main2 .box1 .fleximg img {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:768px) {
+
+	main .title {
+		text-align: center;
+		font-size: 28px;
+		margin-top: 50px;
+	}
+
+	main .title::after {
+		margin-top: 20px;
+	}
+
+	main .introduce {
+		margin: 20px 20px;
+		font-size: 16px !important;
+	}
+
+
+	.main1 .Hbanner-box {
+		background-size: cover;
+	}
+
+	.main1 .Hbanner {
+		padding: 40px 0;
+	}
+
+	.main1 .Hbanner h1 {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	.main1 .Hbanner p {
+		margin-bottom: 10px;
+	}
+
+	.main1 .Hbanner .btn1 {
+		display: none;
+	}
+
+	.main1 .Hbanner .btn2 {
+		display: block;
+	}
+
+	.box {
+		flex-direction: unset;
+		justify-content: space-around;
+		width: 100%;
+		background-color: #fff;
+		bottom: 0;
+		right: 0;
+		top: auto;
+		padding: 10px 0;
+	}
+
+	.Hbanner h1 {
+		font-size: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.main1 .Hbanner a {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 18px;
+		width:max-content;
+	}
+
+	.Hbanner p {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.main2 {
+		padding: 20px 0 30px;
+	}
+
+	.main2 .box1 {
+		margin: 20px 10px;
+		padding: 20px 0;
+	}
+
+	.main2 .box1 h1 {
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.main2 .box1 img,
+	.main2 .box2 .box1 img,
+	.main2 .box1 .fleximg img {
+		width: 100%;
+	}
+
+	.main2 .box2 {
+		flex-direction: column;
+	}
+
+	.main2 .box2 .box1 {
+		width: 100%;
+	}
+
+	.main2 .box2 .box1:first-child {
+		margin-bottom: 20px;
+	}
+
+	.main2 .box1 .fleximg {
+		flex-direction: column;
+	}
+
+	.main2 .box2 {
+		margin: 20px 10px;
+	}
+
+	.main2 .intitle {
+		margin-top: 20px;
+		font-size: 18px;
+	}
+
+	.main2 .flex-btn {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+	.main2 .flex-btn .btn2 {
+		margin-top: 40px;
+		margin-left: 0;
+	}
+
+	.main2 .flex-btn .btn2 a {
+		font-size: 14px;
+		text-align: center;
+		margin: 0;
+	}
+
+	.dialog {
+		width: 94%;
+		left: 3%;
+		padding: 20px;
+	}
+
+	.dialog .head {
+		align-items: center;
+	}
+
+	.dialog .content {
+		flex-direction: column;
+		height: 300px;
+		overflow-y: auto;
+	}
+
+	.dialog .off {
+		width: 20px;
+	}
+
+	.dialog .off img {
+		width: 100%;
+	}
+
+	.dialog .content>img {
+		width: 100%;
+		height: auto;
+	}
+
+	.dialog .content .cont p {
+		font-size: 14px;
+	}
+}
+
+
+
+
+.main16 ul {
+	margin: 70px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main16 ul li {
+	width: calc(20% - 6px);
+}
+
+.main16 ul li img {
+	border: 1px solid transparent;
+	width: 100%;
+}
+
+.main16 ul li img:hover {
+	box-shadow: 5px 5px 5px #E5E5E5;
+	border: 1px solid #eeeeee;
+}
+
+.main16>h2 {
+	font-family: 'Popins-MediumItalic';
+	color: #231816;
+	text-align: right;
+	margin-bottom: 70px;
+	font-size: 30px;
+}
+
+
+
+
+
+.main16 {
+	margin-top: 150px;
+	margin-bottom: 120px;
+}
+
+.main16 {
+	padding: 0px;
+}
+
+.main16 ul {
+		margin: 70px 100px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+}
+
+.main16 ul li {
+			width: calc(20% - 6px);
+}
+
+.main16 ul li img {
+				border: 1px solid transparent;
+				width: 100%;
+}
+
+.main16 ul li img:hover {
+					box-shadow: 5px 5px 5px #E5E5E5;
+					border: 1px solid #eeeeee;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:540px) {
+	
+}

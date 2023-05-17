@@ -1,0 +1,852 @@
+.Hbanner-box {
+	background: url('../images/bg-registration.png') no-repeat;
+	background-size: cover;
+}
+
+.Hbanner {
+	max-width: 1550px;
+	margin: auto;
+	padding: 80px 0;
+}
+
+.Hbanner h1 {
+	color: #95CEDC;
+	font-family: 'Popins-Bold';
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+
+.Hbanner a {
+	border-radius: 8px;
+	padding: 10px 30px;
+	margin: 0 5px;
+	font-size: 20px;
+	font-family: 'Popins-Medium';
+	cursor: pointer;
+	border: 1px solid #01823F;
+	color: #01823F;
+	background-color: #fff;
+	min-width: 9em;
+	text-align: center;
+	font-weight: 600;
+	text-shadow: 10px 5px 10px #D6D6D6;
+	margin-right: 50px;
+}
+.card-box3 .form .form-item {
+	display: none;
+}
+.Hbanner a:hover {
+	background-color: #01823F;
+	color: #fff;
+	text-shadow: none;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 10px;
+	top: 60%;
+	z-index: 999;
+}
+
+.box a {
+	margin: 4px 0;
+}
+
+.box img {
+	width: 28px;
+	height: 28px;
+}
+
+.main1 {
+	max-width: 1200px;
+	margin: auto;
+	padding: 80px 0;
+}
+
+.main1 .head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #E0E0E1;
+	padding: 20px 0;
+}
+
+.main1 .head .left {
+	color: #01823F;
+	font-family: 'Popins-Bold';
+	font-size: 24px;
+}
+
+.main1 .head .right {
+	background-color: #01823F;
+	color: #fff;
+	font-family: 'Popins-Bold';
+	font-size: 22px;
+	padding: 10px 20px;
+}
+
+.main1 .head .right img {
+	width: 14px;
+	margin-left: 10px;
+}
+
+.main1 ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.main1 ul li {
+	width: 24%;
+}
+
+.main1 .ul1 li {
+	font-family: 'Popins-Light';
+	color: #231815;
+	font-size: 18px;
+}
+
+.main1 .ul1 li p {
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.main1 .ul2 li {
+	background-color: #01823F;
+	color: #fff;
+	text-align: center;
+	padding: 15px 0;
+	font-family: 'Popins-Medium';
+	font-size: 18px;
+}
+
+.main1 .ul3 li {
+	text-align: center;
+	padding: 15px 0;
+	font-family: 'Popins-Medium';
+	font-size: 18px;
+}
+
+.main1 .ul3 li:first-child {
+	background-color: #01823F;
+	color: #fff;
+}
+
+.main1 .ul3 li:nth-child(2) {
+	background-color: #C8C9C9;
+	color: #01823F;
+	width: 49%;
+}
+
+.main1 .ul3 li:last-child {
+	background-color: #C8C9C9;
+	color: #01823F;
+}
+
+.main1 .content h1 {
+	color: #01823F;
+	font-family: 'Popins-Bold';
+	font-size: 24px;
+	margin-top: 30px;
+}
+
+.main1 .content ul {
+	display: block;
+}
+
+.main1 .content ul li {
+	color: #898888;
+	font-size: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.main1 .content ul li::before {
+	content: '';
+	width: 4px;
+	height: 4px;
+	background-color: #898888;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.dialog {
+	background-color: #000000b0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1030;
+}
+
+.dialog .maskbox {
+	width: 50%;
+	max-height: 90%;
+	overflow-y: auto;
+}
+
+.dialog .content {
+	background-color: #fff;
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	position: relative;
+}
+
+.dialog .content .title {
+	font-size: 20px;
+	font-family: 'Popins-Bold';
+	text-align: center;
+	color: #01823F;
+	padding: 20px 0 10px;
+	max-width: 80%;
+	margin: auto;
+	line-height: 2;
+}
+
+.dialog .content .step {
+	text-align: center;
+	color: #433267;
+	font-family: 'Popins-Light';
+	font-size: 14px;
+	background-color: #F3F4F4;
+	width: max-content;
+	margin: 0 auto 15px;
+	padding: 5px 20px;
+	border-radius: 500px;
+
+}
+
+.dialog .content .step img {
+	width: 10px;
+	margin: 0 10px;
+}
+
+.dialog .content .tip {
+	background-color: #F7E8E8;
+	padding: 15px 30px;
+	margin-bottom: 10px;
+}
+
+.dialog .content .tip h2 {
+	color: #01823F;
+	font-family: 'Popins-Bold';
+	font-size: 14px;
+}
+
+.dialog .content .tip h3 {
+	color: #01823F;
+	font-size: 14px;
+	font-family: 'Popins-Medium';
+}
+
+.dialog .content .card-box .item-cbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+	border-top: 1px solid #E5E6E6;
+}
+
+.dialog .content .card-box .item-cbox .left h2 {
+	font-size: 14px;
+	font-family: 'Popins-Bold';
+}
+
+.dialog .content .card-box .item-cbox .right {
+	display: flex;
+	align-items: center;
+}
+
+.dialog .content .card-box .item-cbox .right .price {
+	margin-right: 40px;
+	font-family: 'Popins-Medium';
+}
+
+.dialog .content .card-box .item-cbox .right select {
+	border-color: #DCDCDC;
+	padding: 5px 0;
+	width: 3em;
+	border-radius: 5px;
+	font-family: 'Popins-Medium';
+}
+
+.dialog .content .card-box .item-cbox .right .submit {
+	color: #fff;
+	background-color: #01823F;
+	cursor: pointer;
+	padding: 5px 30px;
+}
+
+.dialog .content .card-box .item-cbox.tips {
+	display: block;
+}
+
+.dialog .content .card-box .tips a {
+	font-size: 12px;
+	color: #01823F;
+}
+
+.dialog .off {
+	cursor: pointer;
+	position: absolute;
+	right: 20%;
+	top: 5%;
+}
+
+.dialog .back {
+	width: 50px;
+	position: absolute;
+	left: 50px;
+	top: 80px;
+	cursor: pointer;
+}
+
+.dialog .content .card-box2 .card-title {
+	font-family: 'Popins-Bold';
+	font-size: 16px;
+	padding: 15px 30px;
+	border-top: 1px solid #E5E6E6;
+}
+
+.dialog .content .card-box2 .order {
+	background-color: #F3F4F4;
+	margin: 0px 30px;
+}
+
+.dialog .content .card-box2 .order .order-title {
+	font-family: 'Popins-Bold';
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 10px;
+	border-bottom: 1px solid #E5E6E6;
+}
+
+.dialog .content .card-box2 .order .order-title small {
+	font-size: 12px;
+	font-family: 'Popins-Light';
+}
+
+.dialog .content .card-box2 .order .order-title span {
+	font-family: 'Popins-Light';
+}
+
+.dialog .content .card-box2 .order>ul {
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.dialog .content .card-box2 .order>ul li {
+	font-family: 'Popins-Light';
+	font-size: 16px;
+}
+
+.dialog .content .card-box2 .order>ul li:first-child {
+	width: 50%;
+}
+
+.dialog .content .card-box2 .order>ul li:nth-child(2) {
+	width: 20%;
+}
+
+.dialog .content .card-box2 .order>ul li:nth-child(3) {
+	width: 10%;
+}
+
+.dialog .content .card-box2 .order .foot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid #E5E6E6;
+	margin-top: 10px;
+	padding: 10px;
+	font-family: 'Popins-Bold';
+}
+
+.dialog .content .card-box2 .order .foot h1 {
+	font-size: 16px;
+}
+
+.dialog .content .card-box2 .coupon {
+	padding: 10px 30px;
+	border-top: 1px solid #E5E6E6;
+	margin-top: 10px;
+}
+
+.dialog .content .card-box2 .coupon h2 {
+	font-family: 'Popins-Light';
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.dialog .content .card-box2 .coupon h2 img {
+	width: 15px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.dialog .content .card-box2 .coupon .coupon-box {
+	display: none;
+	align-items: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.dialog .content .card-box2 input,
+.dialog .content .card-box3 .form input,
+.dialog .content .card-box3 .form select {
+	font-family: 'Popins-Light';
+	font-size: 14px;
+	border: 1px solid #C5C5C6;
+	padding: 10px;
+}
+
+.dialog .content .card-box2 .coupon .couponsubimt {
+	background-color: #01823F;
+	border: 1px solid #01823F;
+	color: #fff;
+	margin-left: 10px;
+}
+
+.dialog .content .card-box2 .form,
+.dialog .content .card-box3 .form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+
+.dialog .content .card-box2 .form-item1,
+.dialog .content .card-box3 .form-item1 {
+	width: 48%;
+}
+
+.dialog .content .card-box2 .form-item2,
+.dialog .content .card-box3 .form-item2 {
+	width: 100%;
+}
+
+.dialog .content .card-box2 .form input,
+.dialog .content .card-box3 .form input,
+.dialog .content .card-box3 .form select {
+	width: 100%;
+}
+
+.dialog .content .card-box2 .form .form-item .top,
+.dialog .content .card-box3 .form .form-item .top {
+	font-family: 'Popins-Light';
+	font-size: 14px;
+	color: #2E2320;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.dialog .content .card-box2 .form .form-item .top span,
+.dialog .content .card-box3 .form .form-item .top span {
+	color: #D54290;
+}
+
+.dialog .content .card-box2 .form .form-item .bottom,
+.dialog .content .card-box3 .form .form-item .bottom,
+.dialog .content .card-box2 .policy-bottom {
+	font-family: 'Popins-Light';
+	font-size: 12px;
+	color: #c91818;
+	margin-top: 5px;
+	/* display: none; */
+}
+
+.dialog .content .card-box2 .policy-bottom {
+	padding: 0 30px;
+}
+
+.dialog .content .card-box2 .policy .check {
+	padding: 10px 30px;
+	display: flex;
+	align-items: center;
+}
+
+.dialog .content .card-box2 .policy .check input {
+	margin-right: 5px;
+}
+
+.dialog .content .card-box2 .policy .check .label {
+	cursor: pointer;
+	font-family: 'Popins-Light';
+	font-size: 18px;
+}
+
+.dialog .content .card-box2 .policy .check .label span {
+	color: #D54290;
+}
+
+.dialog .content .card-box2 .policy .check img {
+	width: 15px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.dialog .content .card-box2 .policy .policy-text {
+	padding: 10px 20px;
+	margin: 10px 30px;
+	border: 1px solid #E8E8E8;
+	border-radius: 4px;
+	display: none;
+}
+
+.dialog .content .card-box2 .policy .policy-text h3 {
+	font-family: 'Popins-Medium';
+	font-size: 14px;
+}
+
+.dialog .content .card-box2 .policy .policy-text p {
+	font-family: 'Popins-Light';
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.dialog .content .card-box2 .form-price {
+	border: 1px solid #E5E6E6;
+	margin: 30px;
+	padding: 20px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.dialog .content .card-box2 .form-price .form-price-title {
+	font-size: 18px;
+	font-family: 'Popins-Bold';
+	position: absolute;
+	top: -10px;
+	background-color: #fff;
+}
+
+.dialog .content .card-box2 .policy .policy-text p:last-child {
+	margin-bottom: 0;
+}
+
+.dialog .content .card-box2 .submit {
+	padding: 30px;
+	text-align: right;
+}
+
+.dialog .content .card-box2 .submit button {
+	padding: 30px;
+	color: #fff;
+	background-color: #01823F;
+	border: 0;
+	padding: 5px 30px;
+}
+
+.dialog .content .card-box2 .tips,
+.dialog .content .card-box3 .tips {
+	padding: 30px;
+	border-top: 1px solid #E5E6E6;
+}
+
+.dialog .content .card-box2 .tips a,
+.dialog .content .card-box3 .tips a {
+	font-size: 12px;
+	color: #01823F;
+}
+
+.dialog .content .card-box3 .head-box {
+	border: 1px solid #E5E6E6;
+	border-left: 0;
+	border-right: 0;
+}
+
+.dialog .content .card-box3 .head-box .head-boxtit {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dialog .content .card-box3 .head-box .head-boxtit h1 {
+	font-family: 'Popins-Bold';
+	font-size: 18px;
+}
+
+.dialog .content .card-box3 .head-box {
+	padding: 20px 30px;
+}
+
+.dialog .content .card-box3 .head-box .head-boxtit {
+	margin-bottom: 10px;
+}
+
+.dialog .content .card-box3 .head-box p {
+	font-size: 14px;
+	font-family: 'Popins-Light';
+	font-size: 14px;
+	color: #72658D;
+}
+
+.dialog .content .card-box3 .head-box p span {
+	font-family: 'Popins-Bold';
+	color: #3A2960;
+}
+
+.dialog .content .card-box3 .submit {
+	color: #fff;
+	background-color: #01823F;
+	cursor: pointer;
+	padding: 5px 30px;
+	border: 0;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.dialog .errors {
+	background-color: #F7E8E8;
+	color: #01823F;
+	padding: 30px;
+	font-family: 'Popins-Light';
+	font-size: 16px;
+}
+
+.dialog .errors h2 {
+	font-family: 'Popins-Light';
+	font-size: 16px;
+}
+
+.dialog .card-box3 .form .cardnum {
+	display: flex;
+	border: 1px solid #C5C5C6;
+	padding: 10px;
+}
+
+.dialog .card-box3 .form .cardnum input {
+	border: 0;
+	padding: 0;
+	outline: none;
+}
+
+.dialog .card-box3 .form .cardnum img {
+	height: 30px;
+}
+
+@media screen and (max-width:768px) {
+	.box{
+		flex-direction: unset;
+		justify-content: space-around;
+		width: 100%;
+		background-color: #fff;
+		bottom: 0;
+		right: 0;
+		top: auto;
+		padding: 10px 0;
+	}
+
+	.Hbanner h1 {
+		font-size: 30px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+	}
+
+	.Hbanner a {
+		margin-left: 10px;
+		font-size: 18px;
+		margin-right: 0;
+		padding: 10px 20px;
+	}
+
+	.Hbanner {
+		padding: 20px 0;
+	}
+
+	.main1 {
+		padding: 20px 0;
+	}
+
+	.dialog .content .card-box2 .form-item1,
+	.dialog .content .card-box3 .form-item1 {
+		width: 100%;
+	}
+
+	.dialog .content {
+		width: 100%;
+	}
+
+	.dialog .card-box3 .form .cardnum img {
+		display: none;
+	}
+
+	.dialog .content .step {
+		padding: 2px 6px;
+	}
+
+	.dialog .content .step img {
+		margin: 0 3px;
+	}
+
+	.dialog .content .title {
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	.dialog .content .card-box3 .head-box .head-boxtit {
+		flex-direction: column;
+	}
+
+	.dialog .content .card-box3 .head-box .head-boxtit h1 {
+		font-size: 16px;
+	}
+
+	.dialog .content .card-box3 .head-box p {
+		text-align: center;
+	}
+
+	.dialog .content .card-box2 .coupon .coupon-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.dialog .content .card-box2 .coupon .coupon-box input {
+		width: 100%;
+	}
+
+	.dialog .content .card-box2 .coupon .couponsubimt {
+		margin: 0;
+		margin-top: 5px;
+	}
+
+	.dialog .content .card-box .item-cbox {
+		padding: 10px 15px;
+	}
+
+	.dialog .maskbox {
+		max-height: 70% !important;
+	}
+
+	.dialog .off {
+		top: 15% !important;
+		right: 1% !important;
+	}
+
+	.dialog .off img {
+		width: 24px;
+	}
+
+	.dialog .content .card-box2 .order>ul {
+		flex-wrap: wrap;
+	}
+
+	.dialog .content .card-box2 .order>ul li:first-child {
+		width: 100%;
+	}
+
+	.dialog .content .card-box2 .order>ul li:nth-child(2),
+	.dialog .content .card-box2 .order>ul li:nth-child(4) {
+		width: 40%;
+	}
+
+	.dialog .content .card-box2 .order>ul li:nth-child(3) {
+		width: 20%;
+	}
+
+	.dialog .content .card-box2 .card-title,
+	.dialog .content .card-box2 .coupon,
+	.dialog .content .card-box2 .policy .check {
+		padding: 10px 15px;
+	}
+
+	.dialog .content .card-box2 .form,
+	.dialog .content .card-box3 .form {
+		padding: 30px 15px;
+	}
+
+	.dialog .content .card-box2 .order,
+	.dialog .content .card-box2 .form-price {
+		margin: 20px 15px;
+	}
+
+	.dialog .content .card-box2 .policy .policy-text {
+		margin: 10px 15px;
+		padding: 10px 15px;
+	}
+
+	.dialog .content .card-box2 .policy-bottom {
+		padding: 0 15px 5px 15px;
+	}
+
+	.dialog .errors {
+		padding: 10px 15px;
+	}
+
+	.dialog .content .card-box2 .form-price .form-price-title {
+		top: -20px;
+	}
+
+	.dialog .content .card-box .item-cbox .right .price {
+		margin-right: 20px;
+	}
+
+	.dialog .back {
+		width: 40px;
+		top: 60px;
+	}
+
+	.main1 .head {
+		flex-direction: column;
+	}
+
+	.main1 .head .right {
+		text-align: center;
+		width: 100%;
+	}
+
+	.main1 .content ul li,
+	.main1 .ul1 li {
+		font-size: 16px;
+	}
+
+	.main1 .ul3 li,
+	.main1 .ul2 li {
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+}
+
+@media screen and (max-width:1080px) {
+	.Hbanner-box {
+		margin-top: 160px;
+	}
+
+	.Hbanner h1,
+	.main1 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.Hbanner a {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.dialog .maskbox {
+		width: 80%;
+		max-height: 75%;
+	}
+
+	.dialog .off {
+		top: 13%;
+		right: 10%;
+	}
+
+	.dialog .back {
+		left: 5%;
+	}
+}

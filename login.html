@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>SZWGroup | 7th Global Dairy Congress Asia 2023</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://img.szwgroup.com/css/animate.min.css">
+		<link rel="stylesheet" href="./css/public.css">
+		<link rel="stylesheet" href="https://img.szwgroup.com/css/swiper.min.css">
+		<link rel="stylesheet" href="https://img.szwgroup.com/css/bootstrap.css">
+		<link rel="stylesheet" href="./css/login.css">
+		<script src="https://img.szwgroup.com/js/jquery.min.js"></script>
+		<script src="https://img.szwgroup.com/js/swiper.js"></script>
+		<script src="https://img.szwgroup.com/js/bootstrap.min.js"></script>
+		<script src="https://img.szwgroup.com/js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<main class="page1" v-show="step==0">
+				<h1>Participation Login</h1>
+				<div class="form-item">
+					<div class="top">
+						User ID
+					</div>
+					<input type="text" v-model="form.Account">
+				</div>
+				<div class="form-item">
+					<div class="top">
+						Password
+					</div>
+					<input type="password" v-model="form.Password">
+				</div>
+				<div class="btn-box">
+					<button @click="login()">LogIn</button>
+				</div>
+			</main>
+			<main class="page2" style="display: none;" v-show="step==1">
+				<h1>DAIRY ASIA 2023 VIP Page</h1>
+				<p class="mb-5">Dear Delegate:</p>
+				<p>Welcome to 7th Global Dairy Congress Asia 2023 VIP Page.</p>
+				<p>You can download the final agenda, presentation slides, and a selection of photos.</p>
+				<p>Thank you again for attending our conference Your participation is very important to the overall
+					success of this conference and we appreciateyour taking the time and effort to contribute. Should
+					you have any questions, please contact <a href="mailto:melodyguo@szwgroup.com" target="_blank" style="color:#fff; text-decoration:none">melodyguo@szwgroup.com</a></p>
+				<p>We hope to see you again in the future!</p>
+				<p>Conference Committee of Europe Health Dairy Asia 2023 Innovation Congress 2022</p>
+				<p class="mt-5">Upcoming Nuclear Events:</p>
+				<p>3rd Dairy Asia 2023 Analytics & Al Innovation ASIA 2023  (March 22nd-23rd, 2023,Singapore)</p>
+				<div class="btn-box">
+					<button @click="step = 2,getDownloadList()">Presentatlons</button>
+					<button @click="step = 3,getPhoneGallery()">Photo Gallery</button>
+				</div>
+			</main>
+			<main class="page3" style="display: none;" v-show="step==2">
+				<h1>Conference Proceedings</h1>
+				<div class="page3-flex">
+					<div class="left">
+						<img :src="proceedings.sdPic" alt="">
+						<a @click="DownloadFile(proceedings.id,proceedings.sdFile)" href="javascript:;" download>Brochure Download</a>
+					</div>
+					<div class="right">
+						<h2>Presentations</h2>
+						<div v-for="(item,index) in day">
+							<h3>{{item[0].sdLabel}}</h3>
+							<ul>
+								<li v-for="items in item">
+									{{items.sdFileName}}
+									<img src="images/download2.png" @click="DownloadFile(items.id,items.sdFile)" alt="">
+								</li>
+							</ul>
+						</div>
+						
+						<!-- <h3>Day Two</h3>
+						<ul>
+							<li v-for="item in day2">
+								{{item.label}}
+								<a :href="item.url" download><img src="images/download2.png" alt=""></a>
+							</li>
+						</ul> -->
+						<div class="btn-box">
+							<button @click="step = 1">Back to VIP Page</button>
+						</div>
+					</div>
+				</div>
+			</main>
+			<main class="page4" style="display: none;" v-show="step==3">
+				<h1>Phone Gallery</h1>
+				<ul>
+					<li v-for="(item,index) in imglist" @click="previewShow(index+1)"><img :src="item" alt=""></li>
+				</ul>
+				<div class="btn-box">
+					<button @click="step=1">Back to VIP Page</button>
+				</div>
+				<div class="preview-swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" v-for="(item,index) in imglist"><img :src="item" alt=""></div>
+						</div>
+						<div class="swiper-button-next">
+							<img src="images/preview-prev.png" alt="">
+						</div>
+						<div class="swiper-button-prev">
+							<img src="images/preview-prev.png" alt="">
+						</div>
+						<div class="off" onclick="previewOff()">
+							<img src="images/w-off.png" alt="">
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+	<script src="https://img.szwgroup.com/js/wow.min.js"></script>
+	<script src="https://img.szwgroup.com/js/bootstrap.bundle.min.js"></script>
+	<script src="https://img.szwgroup.com/js/FileSaver.js"></script>
+	<script src="./js/public.js"></script>
+	<script src="./js/Js_login.js"></script>
+</html>

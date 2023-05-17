@@ -1,0 +1,289 @@
+.form {
+	background-color: #01823F;
+	padding: 120px 88px;
+	margin-bottom: 120px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.form-item {
+	width: 48%;
+}
+
+.form-item2 {
+	width: 100%;
+}
+
+.form-item2>div,
+.form-item>div {
+	color: #ffffff;
+	font-family: 'Popins-Regular';
+	font-size: 29px;
+	margin: 0px 18px 10px 18px;
+}
+
+.form-item .tips,
+.form-item2 .tips {
+	background-color: #77C610;
+	margin: 10px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 25px;
+	padding: 10px 0;
+	opacity: 0;
+}
+
+.form-item2>div span,
+.form-item>div span {
+	color: #77C610;
+}
+
+.form-item input,
+.form-item2 input,
+.form-item2 select {
+	border-radius: 10px;
+	padding: 20px 20px;
+	border: 0;
+	width: 100%;
+	font-size: 22px;
+	font-family: 'Popins-Regular';
+	border: 2px solid transparent;
+}
+
+.form-item input:focus,
+.form-item2 input:focus,
+.form-item2 select:focus {
+	outline: none;
+	border: 2px solid #77C610;
+}
+
+.form-item2 select:focus option:checked {
+	background-color: #77C610;
+	color: #fff;
+}
+
+.form>p {
+	color: #fff;
+	margin-top: 50px;
+	font-size: 21px;
+	line-height: 2;
+	font-family: 'Popins-Light';
+	width: 100%;
+}
+
+.form>p>a {
+	color: #77C610;
+}
+
+.form .submit-box {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+.form .submit-box .tips {
+	color: #77C610;
+	font-size: 20px;
+	font-family: 'Popins-Light';
+	margin-right: 100px;
+	opacity: 0;
+}
+
+.form .submit {
+	background-color: #fff;
+	color: #01823F;
+	font-weight: 600;
+	font-size: 34px;
+	font-family: 'Popins-Light';
+	padding: 15px 120px;
+	border: 0;
+
+}
+
+.Hbanner-box {
+	background: url('../images/bg-registration.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+.Hbanner {
+	max-width: 1550px;
+	margin: auto;
+	padding: 80px 0;
+}
+
+.Hbanner h1 {
+	color: #95CEDC;
+	font-family: 'Popins-Bold';
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+
+.Hbanner a {
+	border-radius: 8px;
+	padding: 10px 30px;
+	margin: 0 5px;
+	font-size: 20px;
+	font-family: 'Popins-Medium';
+	cursor: pointer;
+	border: 1px solid #01823F;
+	color: #01823F;
+	background-color: #fff;
+	min-width: 9em;
+	text-align: center;
+	font-weight: 600;
+	text-shadow: 10px 5px 10px #D6D6D6;
+	margin-right: 50px;
+}
+
+.Hbanner a:hover {
+	background-color: #01823F;
+	color: #fff;
+	text-shadow: none;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 10px;
+	top: 60%;
+	z-index: 999;
+}
+
+.box a {
+	margin: 4px 0;
+}
+
+.box img {
+	width: 28px;
+	height: 28px;
+}
+
+main {
+	max-width: 1700px;
+	margin: auto;
+}
+
+main .title {
+	color: #01823F;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Popins-Bold';
+	font-size: 36px;
+	margin-top: 100px;
+}
+
+main .title::after {
+	content: '';
+	width: 220px;
+	height: 6px;
+	background-image: linear-gradient(90deg, #77C610 20%, #01823F);
+	margin-top: 30px;
+}
+
+main .introduce {
+	color: #606060;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Popins-ExtraLight';
+	margin: 60px 60px 100px;
+}
+
+@media screen and (max-width:768px) {
+	.Hbanner-box {
+		margin-top: 160px;
+	}
+
+	.form {
+		margin: 0;
+	}
+
+	.form-item {
+		width: 100%;
+	}
+
+	.form>p {
+		text-align: center;
+		margin-top: 0px;
+		font-size: 16px;
+	}
+
+	.form .submit-box {
+		flex-direction: column-reverse;
+		margin-top: 20px;
+	}
+
+	.form .submit-box .tips {
+		margin-right: 0;
+		margin-top: 20px;
+	}
+	.form .submit{
+		font-size: 18px;
+	}
+	.form .submit-box .tips{
+		font-size: 16px;
+	}
+
+	main .title {
+		text-align: center;
+		font-size: 28px;
+		margin-top: 50px;
+	}
+
+	main .title::after {
+		margin-top: 20px;
+	}
+
+	main .introduce {
+		margin: 20px 20px;
+	}
+
+	.form {
+		padding: 50px 30px;
+	}
+
+	.box{
+		flex-direction: unset;
+		justify-content: space-around;
+		width: 100%;
+		background-color: #fff;
+		bottom: 0;
+		right: 0;
+		top: auto;
+		padding: 10px 0;
+	}
+
+	.Hbanner h1 {
+		font-size: 30px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+	}
+
+	.Hbanner a {
+		margin-left: 10px;
+		font-size: 18px;
+		margin-right: 0;
+		padding: 10px 20px;
+	}
+
+	.Hbanner {
+		padding: 20px 0;
+	}
+	.form-item2>div, .form-item>div{
+		font-size: 18px;
+		margin: 0px 15px 10px;
+	}
+	.form-item input, .form-item2 input, .form-item2 select{
+		font-size: 16px;
+		padding: 10px 15px;
+	}
+	.form-item .tips, .form-item2 .tips{
+		font-size: 16px;
+		padding: 5px 0;
+		margin: 5px 0;
+	}
+}
