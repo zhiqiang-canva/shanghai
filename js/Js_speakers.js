@@ -85,8 +85,9 @@ function submit_form() {
 		$(".form .form_bottom .left").css({
 			'opacity': '0'
 		})
-		let Emails = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-		if (!req_form.yscEmail.match(Emails)) {
+		//let Emails = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		let Emails = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+		if (req_form.yscEmail.indexOf("@") <= 0) {
 			$(".Email").css({"color":'red'})
 			$(".form .form_bottom .left").css({
 				'opacity': '1'
@@ -102,10 +103,11 @@ function submit_form() {
 				type: "post",
 				data: req_form,
 				success(res) {
-					if (JSON.parse(res).code != '1001') {
+					if (JSON.parse(res).code != '1000') {
 						alert(JSON.parse(res).msg)
-					}else{
+					} else {
 						alert("Submitted successfully")
+						window.location.reload();
 					}
 				},
 				error(err) {

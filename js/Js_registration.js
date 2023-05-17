@@ -1,6 +1,7 @@
 // 提交
 		function submit() {
-			var Email = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			//var Email = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			let Email = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
 			let data = {
 				yscName: $("#Name").val(),
 				yscJobTitle: $("#JobTitle").val(),
@@ -156,7 +157,8 @@
 				$("#errortip").css({
 					'opacity': '0'
 				})
-				if (!data.yscEmail.match(Email)) {
+				if (data.yscEmail.indexOf("@") <= 0) {
+			//	if (!data.yscEmail.match(Email)) {
 					$("#Email").next('.tips').css({
 						'opacity': '1'
 					})
@@ -183,6 +185,7 @@
 								alert(JSON.parse(res).msg)
 							}else{
 								alert("Submitted successfully")
+								window.location.reload();
 							}
 						},
 						error(err) {

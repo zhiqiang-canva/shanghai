@@ -83,8 +83,10 @@
 		ysExId:exhibitionId
 				
 			}
-			let Emails = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-			if (!params.yscEmail.match(Emails)) {
+			//let Emails = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			let Emails = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+			if (params.yscEmail.indexOf("@") <= 0) {
+		//	if (!params.yscEmail.match(Emails)) {
 				$("#email").addClass('nochange')
 				$(".main4 .form .submit-box p").css({
 					"opacity": '1'
@@ -101,7 +103,8 @@
 						if (JSON.parse(res).code != '1000') {
 							alert(JSON.parse(res).msg)
 						}else{
-						alert("Submitted successfully")
+							alert("Submitted successfully")
+							window.location.reload();
 					}
 					},
 					error(err) {

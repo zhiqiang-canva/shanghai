@@ -33,7 +33,7 @@ const App = {
 			stateVP: false, // 有效期状态
 			// promoAmount: 100, //优惠金额
 			inputCode: '', //输入优惠券code
-			exhibitionname: "DairySingapore20239SZW", //展会名称
+			exhibitionname: "apac2023", //展会名称
 			codemes: '',
 			errorMes: [], //错误提示
 		}
@@ -178,7 +178,7 @@ const App = {
 
 
 			if (document.getElementById("senduser").length > 0) {
-				alert("aaa");
+			//	alert("aaa");
 				//如果大于0 标识 id 为target_obj_id的对象存在，否则不存在 
 				//对象存在的处理逻辑 
 			}
@@ -297,7 +297,8 @@ const App = {
 				// promoAmount:this.promoAmount,
 				sum: this.sum,
 				infoForm: this.infoForm,
-				o_ExID: exhibitionId
+				o_ExID: exhibitionId,
+				payunit:"USD"
 			}
 			total = this.sum;
 

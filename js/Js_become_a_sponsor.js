@@ -43,8 +43,10 @@ function submit_form() {
         req_form.yscInfo &&
         req_form.yscInsterst) {
         // 发送请求
-        let Emails = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
-        if (!req_form.yscEmail.match(Emails)) {
+      //  let Emails = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+        let Emails = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+       // if (!req_form.yscEmail.match(Emails)) {
+        if (req_form.yscEmail.indexOf("@") <= 0) {
             Email.setAttribute('style', 'color:red');
             return
         }
@@ -54,8 +56,11 @@ function submit_form() {
                 type: "post",
                 data: req_form,
                 success(res) {
-                    if (JSON.parse(res).code == '1001') {
+                    if (JSON.parse(res).code != '1000') {
                         alert(JSON.parse(res).msg)
+                    } else {
+                        alert("Submitted successfully")
+                        window.location.reload();
                     }
                 },
                 error(err) {

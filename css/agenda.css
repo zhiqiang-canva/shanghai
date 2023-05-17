@@ -127,9 +127,13 @@ main .title::after {
 	border: 1px solid #77C610;
 }
 
-.main2 .schedule a:first-child {
-	margin-right: 5px;
-}
+	.main2 .schedule a {
+		margin-right: 5px;
+	}
+
+		.main2 .schedule a:last-child {
+			margin-right: 0;
+		}
 
 .main2 .schedule a:hover {
 	background-color: #fff;
@@ -640,9 +644,14 @@ main .title::after {
 		font-size: 18px;
 	}
 
-	.main2 .schedule a:first-child {
+	.main2 .schedule a {
 		margin-bottom: 20px;
 	}
+
+		.main2 .schedule a:last-child {
+			margin-bottom: 5px;
+		}
+
 
 	.main2 .sm-card .sm-title {
 		min-width: 0;

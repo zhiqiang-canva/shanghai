@@ -70,8 +70,9 @@ function submit_form(index) {
 			$(".form2 .form_bottom .left").css({
 				'opacity': '0'
 			})
-			let Emails = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-			if (!req_form.yscEmail.match(Emails)) {
+		//	let Emails = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			let Emails = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+			if (req_form.yscEmail.indexOf("@") <= 0) {
 				Email.setAttribute('style', 'color:red');
 				$(".form2 .form_bottom .left").css({
 					'opacity': '1'
@@ -86,10 +87,11 @@ function submit_form(index) {
 					type: "post",
 					data: req_form,
 					success(res) {
-						if (JSON.parse(res).code != '1001') {
+						if (JSON.parse(res).code != '1000') {
 							alert(JSON.parse(res).msg)
-						}else{
+						} else {
 							alert("Submitted successfully")
+							window.location.reload();
 						}
 					},
 					error(err) {
@@ -162,8 +164,9 @@ function submit_form(index) {
 				'opacity': '0'
 			})
 			// 错误显示按钮左边的提示，否则隐藏
-			let Emails = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
-			if (!req_form.yscEmail.match(Emails)) {
+			//let Emails = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+			let Emails = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+			if (req_form.yscEmail.indexOf("@") <= 0) {
 				Email.setAttribute('style', 'color:red');
 				$(".form_ .form_bottom .left").css({
 					'opacity': '1'
@@ -178,10 +181,11 @@ function submit_form(index) {
 					type: "post",
 					data: req_form,
 					success(res) {
-						if (JSON.parse(res).code != '1001') {
+						if (JSON.parse(res).code != '1000') {
 							alert(JSON.parse(res).msg)
-						}else{
+						} else {
 							alert("Submitted successfully")
+							window.location.reload();
 						}
 					},
 					error(err) {
